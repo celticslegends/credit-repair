@@ -1,0 +1,289 @@
+$siteBgColor: #00605B;
+$siteTextColor: #ffffff;
+$linkColor: #C29450;
+$linkHoverColor: #69606B;
+$headerTextColor: #fff;
+$headerLinkColor: #C29450;
+$headerLinkHoverColor: #69606B;
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.55;
+}
+
+h1,h2,h3,h4,h5,h6,
+.button {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.claim {
+  background-color: $siteBgColor;
+}
+.scream {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+// Some Helper Classes
+.text-shadow {
+  text-shadow: 1px 0 1px rgba(18,18,18,0.8);
+}
+
+// Buttons - powered by http://unicorn-ui.com/buttons/
+.button {
+  color: #fff;
+  text-shadow: none;
+  & i {
+    padding-left: 0;
+    transition: all 100ms ease-in-out;
+  }
+  &:hover i {
+    padding-left: 10px;
+  }
+}
+.button-giant {
+  font-size: 20px;
+}
+.button.button-jonas {
+  background: #29D9C2;
+  color: #fff;
+  &:hover {
+    background: #FE6D01;
+    color: #fff;
+  }
+  &:active {
+    background: #D65C06;
+    color: #fff;
+  }
+}
+
+.claim--contents {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: url(http://texashillcountry.com/wp-content/uploads/8639407877_2ec6f84184_k.jpg) center center no-repeat;
+  background-attachment: scroll;
+  background-size: 1920px 1080px;
+  min-height: 100vh;
+  padding: 0 2vw;
+  text-align: center;
+  color: $siteTextColor;
+  @extend .text-shadow;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -.04em;
+    color: $headerTextColor;
+  }
+  h2 {
+    margin-bottom: $spacingOnElements;
+  }
+}
+
+.container .grid {
+  margin-top: 2em;
+}
+
+footer {
+  text-align: left;
+  ul {
+    list-style: none;
+  }
+}
+.closure {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .button-giant {
+    font-size: 28px;
+  }
+  .claim--contents {
+    padding: 0 20vw;
+  }
+}
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/ThisIsDallas/Simple-Grid/master/simplegrid.css">
+
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oxygen" rel="stylesheet">
+
+  <div class="claim">
+    <div class="claim--contents">
+      <h1>LIFE CAN CHANGE CREDIT REPAIR LLC</h1>
+
+      <p class="scream">CREDIT REPAIR | CONSULTATION</p>
+      <p><a href="#go" class="button button-jonas button-pill button-giant">See what we do</a></p>
+    </div>
+  </div> <!-- end claim -->
+
+<div class="container" id="go">
+
+  <div class="grid grid-pad">
+    <div class="col-1-3 mobile-col-1-1">
+      <h1>BAD CREDIT:</h1>
+      <ul>
+      <li>Unable to secure housing.</li>
+      <li>Ruins marriages.</li>
+      <li>Highest interest rates.</li>
+      </ul>
+      <p><a href="#" class="button button-pill button-jonas">Read more <i class="fa fa-angle-right"></i></a></p>
+    </div>
+    <div class="col-1-3 mobile-col-1-1">
+      <h1>GOOD CREDIT:</h1>
+      <ul>
+      <li>Lowest interest rates</li>
+        <li>Home ownership.</li>
+        <li>Greater opportunities</li>
+      </ul>
+      <p><a href="#" class="button button-pill button-jonas">Read more <i class="fa fa-angle-right"></i></a></p>
+    </div>
+    <div class="col-1-3 mobile-col-1-1">
+      <h1>#LIFECANCHANGE&trade;</h1>
+      <p>Bad credit = less opportunities. We pride ourselves on <strong>RESULTS</STRONG>. It's time you decide to fix your credit.</p>
+      <p><a href="#" class="button button-pill button-jonas">Read more <i class="fa fa-angle-right"></i></a></p>
+    </div>
+  </div>
+
+</div> <!-- end container -->
+
+  <div class="claim">
+    <div class="claim--contents">
+      <h1>OUR CREDIT REPAIR SKILLS ARE IN FACT BETTER</h1>
+      <h2>We Bring Your Credit Back To Life</h2>
+      <p><a href="#go2" class="button button-jonas button-pill button-giant">Fix Your Credit Now!</a></p>
+    </div>
+  </div> <!-- end claim -->
+
+
+<div class="container" id="go2">
+
+  <div class="grid grid-pad">
+    <div class="col-1-3">
+      <p><img src="http://www.attorneymortongrabel.com/img/0025/318.jpg?sitetimestamp=636101265990000000" alt="" /></p>
+    </div>
+    <div class="col-2-3">
+      <h1>TWO DECADES OF COMBINED CREDIT REPAIR EXPERIENCE:</h1>
+      <ul>
+        <li>We apply a process with multiple stages for all of our customers.</li>
+        <li>Based on your credit file and our expertise, we will work until you are satisfied with the results.</li>
+        <li>We understand the individual attention that you deserve and will work tirelessly to attain the results needed.</li>
+      </ul>
+
+      <p>#LifeCanChange</p>
+      <p><a href="" class="button button-pill button-jonas">Contact Us <i class="fa fa-angle-right"></i></a></p>
+    </div>
+  </div>
+
+  <div class="grid grid-pad">
+    <div class="col-2-3">
+      <h1>WE SPECIALIZE IN THE REMOVAL OF:</h1>
+      <ul>
+        <li>Collections.</li>
+        <li>Late Payments.</li>
+        <li>Repossessions.</li>
+        <li>Identity Theft.</li>
+        <li>Fraud.</li>
+        <li>Incorrect Personal Information.</li>
+        <li>Negative Settlements.</li>
+        <li>Tax Liens.</li>
+        <li>Bankruptcies</li>
+        <li>Short Sales.</li>
+        <li>Garnishments.</li>
+      </ul>
+
+
+      <p><a href="#" class="button button-pill button-jonas">Get started on repairing your credit <i class="fa fa-angle-right"></i></a></p>
+    </div>
+    <div class="col-1-3">
+      <p><img src="http://cdn2.hubspot.net/hub/49162/file-14370711-png/images/stop-debt-collection-harrassment.png" alt="" /></p>
+    </div>
+  </div>
+
+  <div class="grid grid-pad">
+    <div class="col-1-3">
+      <p><img src="https://www.fair-debt-collection.com/wp-content/uploads/2015/03/credit_check.jpg" alt="" /></p>
+    </div>
+    <div class="col-2-3">
+      <h1>STEP YOU SHOULD TAKE NOW:</h1>
+      <ul>
+        <li>Contact us for a free consultation!</li>
+      </ul>
+
+      <p><a href="#" class="button button-pill button-jonas">#LifeCanChange Get Started <i class="fa fa-angle-right"></i></a></p>
+    </div>
+  </div>
+
+</div> <!-- end container -->
+
+<footer>
+
+  <div class="grid grid-pad">
+  <div class="col-1-4">
+    <h1>Life Can Change Credit Repair, LLC </h1>
+    <p>Boston | USA</p>
+  </div>
+  <div class="col-1-4">
+    <ul>
+    <li><a href="#">Company</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">References</a></li>
+      <li><a href="#">Whitepapers</a></li>
+      <li><a href="#">Offices</a></li>
+    </ul>
+  </div>
+  <div class="col-1-4">
+    <ul>
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Managed Amazon Cloud</a></li>
+      <li><a href="#">PHP3 on AWS</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">Resources</a></li>
+    </ul>
+  </div>
+  <div class="col-1-4">
+    <ul>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Statement of Support</a></li>
+      <li><a href="#">Managed Services</a></li>
+      <li><a href="#">About</a></li>
+      <li>&copy; 2016 Life Can Change Credit Repair, LLC</li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="row">
+			<div class="col-xs-12 text-center social">
+				<a href="https://www.instagram.com/lifecanchangecreditrepair/" target="_blank">
+					<i class="fa fa-instagram" style="font-size:68px"></i>
+				</a>
+
+
+</footer>
+<div class="closure">
+  <p><q>#LifeCanChange</q></p>
+</div>
